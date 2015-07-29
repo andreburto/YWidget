@@ -25,7 +25,7 @@ public class YWidget extends JFrame implements ActionListener {
 		try {
 			this.setSize(250, 360);
 			this.setMinimumSize(new Dimension(250, 150));
-			this.setMaximumSize(new Dimension(250, 700));
+			this.setMaximumSize(new Dimension(250, 1024));
 			this.setDefaultCloseOperation(YWidget.EXIT_ON_CLOSE);
 			this.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 10));
 			this.setTitle("Yvonne");
@@ -48,10 +48,9 @@ public class YWidget extends JFrame implements ActionListener {
 			
 			// Pull it all together
 			p1 = new JPanel();
-			p1.add(l1);
-			p1.add(f2);
+			p1.add(l1, 0);
+			p1.add(f2, 1);
 			this.add(p1);
-			
 			this.pack();
 			this.setVisible(true);
 		}
@@ -62,21 +61,16 @@ public class YWidget extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		if (e.getSource() == b1) {
 			try {
-				//l1.setVisible(false);
 				l1 = new JLabel(new ImageIcon(y.RandomPic()));
-				//l1.setVisible(true);
-				l1.repaint();
-				p1.repaint();
-				count++;
-				this.setTitle("Refresh: " + count);
+				l1.updateUI();
+				p1.remove(0);
+				p1.add(l1, 0);
+				p1.updateUI();
 			} catch (Exception e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}
-		this.repaint();
 	}
 }
