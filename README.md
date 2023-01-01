@@ -10,7 +10,7 @@ Related project: [Collaginator](https://github.com/andreburto/Collaginator).
 
 1. Change to the project root directory.
 2. Compile the `*.java` files: `javac YWidget/*.java`
-3. Create a jar file: `jar cfe yw.jar YWidget.YWidget.main YWidget/*.class`
+3. Create a jar file: `jar cfe yw.jar YWidget.YWidget YWidget/*.class`
 4. Run the jar file: `java -jar yw.jar`
 
 ## To Do
