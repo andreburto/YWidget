@@ -9,7 +9,7 @@ rm $BASE_DIR/$APP_NAME || echo "No such file."
 find . -name *.class | xargs -I {} rm -f {}
 
 # Compile class files.
-find . -name *.java | xargs -I {} javac -v {}
+find . -name *.java | xargs -I {} javac -verbose {}
 
 # Create the Jar file.
 jar -c -f $BASE_DIR/$APP_NAME -e xyz.yvonneshow.ywidget.YWidget .
