@@ -38,7 +38,7 @@ public class Yvonne {
 		}		
 	}
 	
-	private ImgYvonne RandomUrl() {
+	public ImgYvonne RandomUrl() {
 		Random r = new Random();
 		return pics.get(r.nextInt(this.pics.size() - 1));
 	}
