@@ -1,10 +1,12 @@
-package YWidget;
+package xyz.yvonneshow.ywidget;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.image.*;
+// import java.awt.image.*;
 
 import javax.swing.*;
+
+import xyz.yvonneshow.ycore.*;
 
 @SuppressWarnings("serial")
 public class YWidget extends JFrame implements ActionListener {

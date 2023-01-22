@@ -1,6 +1,6 @@
-package YWidget;
+package xyz.yvonneshow.ycore;
 
-import java.awt.*;
+// import java.awt.*;
 import java.awt.image.*;
 import java.net.*;
 import java.io.*;
@@ -15,20 +15,6 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 public class Yvonne {
-
-	public class ImgYvonne {
-		public String thumb;
-		public String image;
-		
-		public ImgYvonne(String t, String i) {
-			this.thumb = t;
-			this.image = i;
-		}
-		
-		public String toString() {
-			return "{t:'"+this.thumb+"',i:'"+this.image+"'}";
-		}
-	}
 	
 	private String linkUrl = "http://pics.mytrapster.com/yvonne-list.php";
 	private ArrayList<ImgYvonne> pics = null;

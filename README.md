@@ -9,9 +9,9 @@ Related project: [Collaginator](https://github.com/andreburto/Collaginator).
 ## Build
 
 1. Change to the project root directory.
-2. Compile the `*.java` files: `javac YWidget/*.java`
-3. Create a jar file: `jar cfe yw.jar YWidget.YWidget YWidget/*.class`
-4. Run the jar file: `java -jar yw.jar`
+2. Compile the `*.java` files: `find . -name *.java | xargs javac`
+3. Create a jar file: `jar -c -f YWidget.jar -e xyz.yvonneshow.ywidget.YWidget .`
+4. Run the jar file: `java -jar YWidget.jar`
 
 ## To Do
 
