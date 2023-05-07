@@ -12,4 +12,4 @@ find . -name *.class | xargs -I {} rm -f {}
 find . -name *.java | xargs -I {} javac -verbose {}
 
 # Create the Jar file.
-jar -c -f $BASE_DIR/$APP_NAME -e xyz.yvonneshow.ywidget.YWidget .
+jar -vcf $BASE_DIR/$APP_NAME -e xyz.yvonneshow.ywidget.YWidget .
